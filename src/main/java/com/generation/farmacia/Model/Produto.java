@@ -44,6 +44,12 @@ public class Produto {
     @NotNull(message = "O atributo preço é obrigatório")
     @DecimalMin(value = "0.0", inclusive = false, message = "O preço deve ser maior que zero")
     private BigDecimal preco;
+    
+    @Column(length = 1000)
+    @NotBlank(message = "O atributo imagem é obrigatório")
+    @Size(min = 10, max = 1000, message = "O link da imagem deve ter no mínimo 10 e no máximo 1000 caracteres")
+    @URL(message = "O atributo 'imagem' deve conter uma URL válida")
+    private String imagem;
 
     @UpdateTimestamp
     private LocalDateTime data;
