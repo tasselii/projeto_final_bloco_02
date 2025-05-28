@@ -1,8 +1,7 @@
 
 # 💊 Projeto Final - Bloco 02 | API FARMACIA
 
-🔗 **Link de Teste da API:**  
-[https://projeto-final-bloco-02-7l9p.onrender.com](https://projeto-final-bloco-02-7l9p.onrender.com)
+🔗 **Link de Teste da API:**  [https://projeto-final-bloco-02-7l9p.onrender.com](https://projeto-final-bloco-02-7l9p.onrender.com)
 
 🔐 **Acesso Padrão:**  
 - **Usuário:** `root@root.com`  
