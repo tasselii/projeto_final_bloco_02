@@ -28,7 +28,7 @@ public class Categoria {
 	@Column(length = 255)
 	@NotBlank(message = "O titulo é obrigatório")
 	@Size(min = 3, max = 255, message = "O atributo titulo deve ter no minimo 10 e no máximo 255 caracteres")
-	private String titulo;
+	private String nome;
 	
 	@OneToMany(fetch = FetchType.LAZY, mappedBy = "categoria", cascade = CascadeType.REMOVE)
 	@JsonIgnoreProperties("categoria")
@@ -42,12 +42,12 @@ public class Categoria {
 		this.id = id;
 	}
 
-	public String getTitulo() {
-		return titulo;
+	public String getNome() {
+		return nome;
 	}
 
-	public void setTitulo(String titulo) {
-		this.titulo = titulo;
+	public void setNome(String nome) {
+		this.nome = nome;
 	}
 
 	public List<Produto> getProduto() {
