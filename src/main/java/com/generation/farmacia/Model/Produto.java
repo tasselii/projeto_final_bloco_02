@@ -54,11 +54,6 @@ public class Produto {
 	@ManyToOne
 	@JsonIgnoreProperties("produto") 
 	private Categoria categoria;
-	
-	/*@ManyToOne
-    @JoinColumn(name = "usuario_id") 
-	@JsonIgnoreProperties("categoria") 
-    private Usuario usuario; */
 
 	public Long getId() {
 		return id;
