@@ -22,10 +22,10 @@ import jakarta.validation.constraints.Pattern;
 import jakarta.validation.constraints.Size;
 
 @Entity
-@Table(name = "tb_produtos") // CREAT TABLE tb_produtos();
+@Table(name = "tb_produtos") 
 public class Produto {
 
-	@Id
+    @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
@@ -34,26 +34,35 @@ public class Produto {
     @Pattern(regexp = "^[^0-9].*", message = "O nome não pode começar com número")
     @Size(min = 5, max = 100, message = "O atributo nome deve ter no mínimo 5 e no máximo 100 caracteres")
     private String nome;
-    
 
     @Column(length = 1000)
     @NotBlank(message = "O atributo descrição é obrigatório")
     @Size(min = 10, max = 1000, message = "A descrição deve ter no mínimo 10 e no máximo 1000 caracteres")
     private String descricao;
-    
 
     @Column(precision = 10, scale = 2)
     @NotNull(message = "O atributo preço é obrigatório")
     @DecimalMin(value = "0.0", inclusive = false, message = "O preço deve ser maior que zero")
     private BigDecimal preco;
-    
-	
-	@UpdateTimestamp
-	private LocalDateTime data;
+
+    @UpdateTimestamp
+    private LocalDateTime data;
+
+    @ManyToOne
+	@JsonIgnoreProperties("produto")
+	private Categoria categoria;
 	
 	@ManyToOne
-	@JsonIgnoreProperties("produto") 
-	private Categoria categoria;
+	@JsonIgnoreProperties("produto")
+	private Usuario usuario;
+
+	public Usuario getUsuario() {
+		return usuario;
+	}
+
+	public void setUsuario(Usuario usuario) {
+		this.usuario = usuario;
+	}
 
 	public Long getId() {
 		return id;
