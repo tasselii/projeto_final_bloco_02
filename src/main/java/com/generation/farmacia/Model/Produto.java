@@ -1,4 +1,4 @@
-package com.generation.farmacia.Model;
+package com.generation.farmacia.model;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;

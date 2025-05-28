@@ -9,8 +9,8 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
-import com.generation.farmacia.Model.Usuario;
-import com.generation.farmacia.Model.UsuarioLogin;
+import com.generation.farmacia.model.Usuario;
+import com.generation.farmacia.model.UsuarioLogin;
 import com.generation.farmacia.repository.UsuarioRepository;
 import com.generation.farmacia.security.JwtService;
 

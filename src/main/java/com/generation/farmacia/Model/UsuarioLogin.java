@@ -1,4 +1,4 @@
-package com.generation.farmacia.Model;
+package com.generation.farmacia.model;
 
 public class UsuarioLogin {
 	

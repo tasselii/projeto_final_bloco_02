@@ -5,7 +5,8 @@ import java.util.List;
 
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
-import com.generation.farmacia.Model.Usuario;
+
+import com.generation.farmacia.model.Usuario;
 
 
 

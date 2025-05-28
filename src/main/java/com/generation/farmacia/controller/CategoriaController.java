@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.server.ResponseStatusException;
 
-import com.generation.farmacia.Model.Categoria;
+import com.generation.farmacia.model.Categoria;
 import com.generation.farmacia.repository.CategoriaRepository;
 
 import jakarta.validation.Valid;

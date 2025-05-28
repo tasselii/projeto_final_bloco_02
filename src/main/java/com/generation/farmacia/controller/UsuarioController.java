@@ -17,8 +17,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.server.ResponseStatusException;
 
-import com.generation.farmacia.Model.Usuario;
-import com.generation.farmacia.Model.UsuarioLogin;
+import com.generation.farmacia.model.Usuario;
+import com.generation.farmacia.model.UsuarioLogin;
 import com.generation.farmacia.repository.CategoriaRepository;
 import com.generation.farmacia.repository.UsuarioRepository;
 import com.generation.farmacia.service.UsuarioService;
