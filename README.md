@@ -44,8 +44,7 @@ Este projeto é um sistema de **comércio eletrônico de uma farmácia**, desenv
 - **Spring Data JPA**  
 - **Spring Security**  
 - **JWT (Json Web Token)**  
-- **MySQL / H2 (para testes)**  
-- **Lombok**  
+- **MySQL / H2 (para testes)**
 - **Insomnia/Postman** (testes de API)
 
 ---
